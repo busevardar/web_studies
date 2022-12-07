@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+  
+}
+/*header start*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20 20;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color:black;
+}
+/*about start*/
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 60px 0;
+    overflow: hidden;
+}
+
+.about .about-picture{
+    display: flex;
+    align-items: center;
+}
+.about .about-picture img{
+    width: 180px;
+    height: 180px;
+    max-width: 250px;
+    max-height: 250 px;
+    border-radius: 100%;
+    padding: 25px;
+    
+}
+.about .about-picture img:hover{
+    transform: translateY(-5px);
+}
+
+.about .about-info{
+    margin:15px;
+    padding: 55px;
+}
+
+.about-picture .col-1{
+    margin-left: -20px;
+}
+
+.about-picture .col-6{
+    margin-right: -40px;
+}
+
+.col-2 ,.col-5{
+    margin-bottom:90px;
+}
+
+.about .about-info{
+    margin: 0 55px;
+}
+
+.about .about-info h1,p{
+    text-align: center ;
+
+
+}
+.about .about-info h1{
+    font-size: 45px;
+    font-weight: 800px;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+}
+
+.about .about-info p{
+    font-size: 18px;
+    letter-spacing: 1.2 px;
+    font-weight: 500px;
+    margin:20px 0;
+}
+.about .about-info a{
+    text-decoration: none;
+    padding: 13px 35px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 35px;
+    font-weight: bold;
+     
+}
+.about .about-info .buton{
+    background-color: black;
+    padding: 25px;
+    margin: 25px;
+    width: 600px;
+    text-align: center;
+    font-size: large;
+
+}
+/*about finish*/
+.line{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 60px 0;
+}
+.line .limit{
+    border:1px solid #ddd;
+    height: 55px;
+}
+.line .line-circle{
+    width:40 px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #777;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*ayakkabı*/
+.container{
+    max-width: 2000px;
+    margin: 0 50px;
+    
+}
+.container h1{
+    align-items: center;
+    text-align: center;
+    
+}
+.information{
+    border: 1px rgb(92, 84, 84) solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    letter-spacing: 0.2px;
+    font-size: large;
+    margin-left: 30px;
+}
+.container .foto-bilgi{
+    margin-left: 80px;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 800px;
+    height: 100px;
+}
+.container .foto-bilgi img{
+    max-width: 600px;
+
+}
+
+    
+    
+
+
+.foto-bilgi .name a{
+    margin: 1rem;
+    background: black;
+    padding:  0.4rem;
+    border-radius: 7px;
+    text-align: center;
+    right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parallax Scrolling Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Moon Light</h2>
+            <a href="#sec" class="btn">Explore</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax Scrolling Effects </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laborum fugiat, optio, deleniti alias suscipit doloribus aut libero atque soluta architecto placeat vel, in sit blanditiis? Quod, quam est pariatur sunt soluta, labore voluptatibus nobis, provident asperiores velit debitis nemo aspernatur. Laboriosam ea magnam molestias excepturi voluptatem temporibus inventore iusto!lorem50
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, fugiat laborum laboriosam ipsa vero fugit minus similique labore, veritatis obcaecati minima reprehenderit sed corrupti doloribus a! Animi odit deleniti itaque adipisci incidunt, sit quibusdam ducimus. Iusto modi aliquam consequuntur, natus, minima facere reprehenderit excepturi, quidem corrupti amet assumenda est ducimus. Ex optio cum dicta nemo explicabo voluptas sapiente, exercitationem reiciendis quia hic non, nisi corporis ducimus nobis accusantium temporibus.
+                <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laborum fugiat, optio, deleniti alias suscipit doloribus aut libero atque soluta architecto placeat vel, in sit blanditiis? Quod, quam est pariatur sunt soluta, labore voluptatibus nobis, provident asperiores velit debitis nemo aspernatur. Laboriosam ea magnam molestias excepturi voluptatem temporibus inventore iusto!lorem50
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, fugiat laborum laboriosam ipsa vero fugit minus similique labore, veritatis obcaecati minima reprehenderit sed corrupti doloribus a! Animi odit deleniti itaque adipisci incidunt, sit quibusdam ducimus. Iusto modi aliquam consequuntur, natus, minima facere reprehenderit excepturi, quidem corrupti amet assumenda est ducimus. Ex optio cum dicta nemo explicabo voluptas sapiente, exercitationem reiciendis quia hic non, nisi corporis ducimus nobis accusantium temporibus.
+                <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laborum fugiat, optio, deleniti alias suscipit doloribus aut libero atque soluta architecto placeat vel, in sit blanditiis? Quod, quam est pariatur sunt soluta, labore voluptatibus nobis, provident asperiores velit debitis nemo aspernatur. Laboriosam ea magnam molestias excepturi voluptatem temporibus inventore iusto!lorem50
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, fugiat laborum laboriosam ipsa vero fugit minus similique labore, veritatis obcaecati minima reprehenderit sed corrupti doloribus a! Animi odit deleniti itaque adipisci incidunt, sit quibusdam ducimus. Iusto modi aliquam consequuntur, natus, minima facere reprehenderit excepturi, quidem corrupti amet assumenda est ducimus. Ex optio cum dicta nemo explicabo voluptas sapiente, exercitationem reiciendis quia hic non, nisi corporis ducimus nobis accusantium temporibus.
+                <br> <br>
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+            
+            window.addEventListener('scroll',function()
+            {
+                let value = window.scrollY;
+                stars.style.left = value * 0.025 + 'rem';
+                moon.style.top = value * 0.105 + 'rem';
+                mountains_behind.style.top = value * 0.05 + 'rem';
+                mountains_front.style.top = value * 0 + 'rem';
+                text.style.marginRight = value * 0.4 + 'rem';
+                text.style.marginTop = value * 0.15 + 'rem';
+                btn.style.marginTop = value  * 0.15 + 'rem';
+                header.style.top = value * 0.05 + 'rem';
+        
+            })
+        </script>
+    </body>
+    </html>
